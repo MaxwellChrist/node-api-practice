@@ -7,7 +7,7 @@ server.get('/', (req, res) => {
 })
 
 server.get('/node-env', (req, res) => {
-    res.json(process.env.NODE_ENV)
+    res.json({ something: "Hello!" });
 })
 
 module.exports = server
