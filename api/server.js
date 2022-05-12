@@ -19,9 +19,9 @@ server.get('/fortune', (req, res) => {
     res.send(`<h1>${fortunes[randomIndex]}</h1>`);
 });
 
-server.get('./my-env', (req, res) => {
-    res.json(process.env.MESSAGE)
-})
+server.get('/my-env', (req, res) => {
+    res.json(process.env.MESSAGE);
+});
 
 
 server.get('/stuff', (req, res) => {
